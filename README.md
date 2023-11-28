@@ -3,7 +3,7 @@
 ![Final App](./resistor.gif)
 
 ## Deployed live version:
-[resistor code](https://)
+[resistor code](https://resistor-color-code.vercel.app)
 
 ## Description
 
@@ -13,7 +13,7 @@ Ohm's law states that the electric current through a conductor between two point
 
 ## Basic features of this app:
 
-- Switch between 4 band and 5 band resistors.
+- Switch between 4-band and 5-band resistors.
 - Choose a color for each band and get a resistance
 
 ## This project uses the following technologies:
