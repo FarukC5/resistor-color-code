@@ -1,0 +1,20 @@
+export const colors = [
+    { name: "black", color: " black", value: 0, multiplier: 0, tolerance: 0 },
+    { name: "brown", color: "brown", value: 1, multiplier: 1, tolerance: 1 },
+    { name: "red", color: "red", value: 2, multiplier: 2, tolerance: 2 },
+    { name: "orange", color: "orange", value: 3, multiplier: 3 },
+    { name: "yellow", color: "yellow", value: 4, multiplier: 4 },
+    { name: "green", color: "green", value: 5, multiplier: 5, tolerance: 0.5 },
+    { name: "blue", color: "blue", value: 6, multiplier: 6, tolerance: 0.25 },
+    {
+      name: "violet",
+      color: "violet",
+      value: 7,
+      multiplier: 7,
+      tolerance: 0.1,
+    },
+    { name: "grey", color: "grey", value: 8, multiplier: 8, tolerance: 0.05 },
+    { name: "white", color: "white", value: 9, multiplier: 9 },
+    { name: "gold", color: "gold", multiplier: -1, tolerance: 5 },
+    { name: "silver", color: "silver", multiplier: -2, tolerance: 10 },
+  ];

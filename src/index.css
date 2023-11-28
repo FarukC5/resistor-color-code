@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,500,600,700");
+
+body,
+html {
+  margin: 0;
+  background: #282c34;
+  height: 100%;
+  font-family: "Lato", sans-serif;
+  background: radial-gradient(ellipse at top, #282c34 10%, #16191d 100%);
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}

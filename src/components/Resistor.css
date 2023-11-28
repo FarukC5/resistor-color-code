@@ -1,0 +1,324 @@
+.resistor-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#wire-left {
+  width: 80px;
+  height: 20px;
+  background: linear-gradient(lightgrey 60%, black 100%);
+}
+
+#oval-left {
+  width: 60px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(white -80%, #c8c6a6 40%, #817f5e 70%, black 100%);
+  border-radius: 18px;
+  position: relative;
+}
+
+#first-band {
+  border-radius: 0px 4px 4px 0px;
+  height: 100%;
+  width: 20px;
+  background: black;
+  content: none;
+  margin-left: 8px;
+  text-align: center;
+}
+
+#three-mid-divs {
+  margin: 0px;
+  width: 45%;
+  height: 80px;
+  background: linear-gradient(#c8c6a6 20%, #817f5e 60%, black 105%);
+  display: flex;
+  margin-left: -3px;
+  margin-right: -3px;
+}
+
+#second-band,
+#third-band,
+#multiplay-band {
+  height: 80px;
+  width: 20px;
+  background: black;
+  margin-left: 15px;
+  text-align: center;
+}
+
+#oval-right {
+  width: 60px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(#c8c6a6 20%, #817f5e 65%, black 100%);
+  border-radius: 18px;
+  position: relative;
+}
+
+#tolerance-band {
+  border-radius: 4px 0px 0px 4px;
+  height: 100%;
+  width: 20px;
+  background: black;
+  margin-right: 8px;
+  text-align: center;
+  position: relative;
+}
+
+#wire-right {
+  width: 80px;
+  height: 20px;
+  background: linear-gradient(lightgrey 60%, black 100%);
+}
+
+.resistor-container::before {
+  content: "";
+  position: absolute;
+  background: black;
+  opacity: 90%;
+  top: 70%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  transform: perspective(5em) rotateX(70deg) scale(0.8, 0.25);
+  filter: blur(3em);
+}
+
+.button-container::befor {
+  content: "";
+  position: absolute;
+  background: lightgrey;
+  top: -58%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: perspective(4em) rotateX(70deg) scale(0.9, 0.45);
+  filter: blur();
+}
+
+.button-div {
+  width: 130px;
+  height: auto;
+  margin: 4px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 2px 8px lightgrey;
+  font-size: 15px;
+  text-align: center;
+}
+
+.result-div {
+  width: 160px;
+  height: 65px;
+  color: black;
+  margin: 4px;
+  border: none;
+  padding: 1px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction:column;
+  align-items: flex-start;
+  background: radial-gradient(ellipse at bottom, white, lightgreen);
+  box-shadow: inset 0px 2px 4px 1px rgba(0, 0, 0, 0.8),
+  1px 1px 0 0 rgba(255, 255, 255, 0.12);
+  font-size: 14px;
+  font-weight: bold;
+}
+#result-box {
+  margin-left: 2px;
+  padding: 1px;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid black;
+}
+
+:root {
+  --clr-green: rgb(44, 233, 92);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.interactive-div {
+  width: 21.875rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #333;
+  background: rgb(66, 66, 66);
+  border-radius: 6px;
+  margin: 20px 10px 20px 10px;
+  padding: 5px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.35), 0 5px 5px rgba(0, 0, 0, 0.5),
+    0 15px 25px rgba(0, 0, 0, 0.35);
+}
+
+/**!  2 buttons and displey */
+
+.button-container {
+  position: "";
+  display: flex;
+  justify-content: center;
+  width: "";
+  background: "";
+  padding: 5px;
+  margin-bottom: 5px;
+  background-color: "";
+}
+
+.two-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: "";
+  gap: 5px;
+}
+
+#label-btn {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+#input-btn {
+  appearance: none;
+}
+
+#span-btn {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  border: 2px solid #333;
+  background: linear-gradient(#555353, #363535, #303030);
+  border-radius: 6px;
+
+  box-shadow: inset 0 5px 1px rgba(0, 0, 0, 0.35), 0 5px 5px rgba(0, 0, 0, 0.5),
+    0 1px 25px rgba(0, 0, 0, 0.15);
+}
+
+#span-btn-after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  border: 2px solid #333;
+  background: linear-gradient(#555353, #363535, #303030);
+  border-radius: 6px;
+
+  box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.35),
+    inset 0 5px 5px rgba(0, 0, 0, 0.5), inset 0 15px 25px rgba(0, 0, 0, 0.35);
+}
+
+.two-buttons span::before {
+  content: "";
+  position: absolute;
+  inset: 5px 3px;
+  border-top: 1px solid #ccc;
+  filter: blur(2px);
+}
+
+#number-active {
+  color: var(--clr-green);
+  text-decoration: none;
+  cursor: pointer;
+  text-shadow: 0 0 0.25em hsl(0 0% 100% / 0.5), 0 0 0.45em var(--clr-green);
+}
+#number-inactive {
+  text-decoration: none;
+}
+.two-buttons a {
+  position: relative;
+  z-index: 10;
+  font-size: 1.5em;
+  color: #111;
+}
+
+@media (min-width: 1009px) {
+.two-buttons a {
+  font-size: 1.0em;
+}  
+}
+
+
+
+#button-actives {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--clr-green);
+  cursor: pointer;
+  text-shadow: 0 0 0.25em hsl(0 0% 100% / 0.5), 0 0 0.45em currentColor;
+  box-shadow: inset 1px 1px 3px 0 rgba(0, 0, 0, 0.8),
+    1px 1px 0 0 rgba(255, 255, 255, 0.12);
+  position: relative;
+  overflow-x: hidden;
+}
+
+
+
+/**!-------------------*/
+/* textual bands and colors */
+
+.textual-outuput {
+  display: flex;
+  border: 2px solid rgb(49, 49, 49);
+  border-radius: 0.2em;
+  background: transparent;
+  margin-bottom: 5px;
+  box-shadow: inset 1px 1px 11px rgba(0, 0, 0, 0.35),
+    0 5px 5px rgba(0, 0, 0, 0.5), 0 1px 25px rgba(0, 0, 0, 0.15);
+}
+
+.name-color-divs {
+  margin: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.name-color-disabled {
+  margin: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 40%;
+}
+
+.name-div {
+  font-size: small;
+}
+
+#color-div {
+  background: #282c34;
+
+  width: 50px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+}
