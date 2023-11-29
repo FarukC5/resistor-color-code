@@ -101,7 +101,7 @@ const Resistor = () => {
     let output =
       results < 1000
         ? results
-        : results <= 1000000
+        : results < 1000000
         ? results / 1000
         : results < 1000000000
         ? results / 1000000
